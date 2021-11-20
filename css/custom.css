@@ -1,0 +1,108 @@
+td + td {
+    width: auto;
+    background: #efefef !important;
+    padding: 20px;
+    color: #444 !important;
+    text-align: left !important;
+    border-right: 0;
+}
+td{
+    width: 140px;
+    vertical-align: middle;
+    border-right: solid 1px #efefef;
+}
+
+.site-title{
+  line-height: 50px;
+}
+
+.card-project {
+  margin: 25px 25px 25px 25px;
+  width: 25rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.card-team {
+  margin: 25px 25px 25px 25px;
+  width: 15rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.card-team-thumbnail {
+  position: relative;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+
+
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-project-thumbnail {
+  position: relative;
+    width: 270px;
+    height: 150px;
+    overflow: hidden;
+
+
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-team-thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.card-text{
+  line-height: normal;
+}
+
+.card-function {
+  color: grey;
+  margin-bottom: 8px;
+}
+.card-studies {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+hr.style2 {
+	border-top: 1px dashed grey;
+}
+
+.slideshow {
+  margin-bottom: 15px;
+}
+
+.carousel-item{
+    height: 300px;
+}
+
+.carousel-item img {
+  width: 100% !important;
+  display: block !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
