@@ -1,0 +1,102 @@
+
+{{ define "main" }}
+  <div class="main" role="main">
+    <article class="article about">
+      <img src="/about/about.jpg">
+
+      <h1 class="article-title">About</h1>
+      <hr class="article-title-bottom">
+
+
+      <!-- {{ .Content }} -->
+
+
+      <div class="row">
+        <div class="col-md-7">
+
+          <h2>How to find us</h2>
+          <p>PRG is located in the basement of the student house, S-huset, bulding 101. On <a href="http://www.prg.dtu.dk/img/1k.png">this</a> map, S-huset is the dark blue area of building 101.</p>
+          <p>Go through entrance door E from the North and turn left into S-huset (signs will clearly mark S-huset). Walk down the spiral staircase. Follow the corridor opposite to the ladies’ room around the Cellar Bar. The corridor will turn left and there is only one door to pass before you stand at the entrance. “PRG” is marked on signs along the wall of the corridor.</p>
+          <p>The offical club night is tuesday, from 19:00 and onwards there is usaully high activity. Stop by and see what we’re doing!</p>
+          <p>We can be contacted via e-mail at <a href="mailto:prg@prg.dtu.dk">prg@prg.dtu.dk</a>. <!-- You may also try the phone number +45 77424429, best chance tuesdays (19:00-23:00). --></p>
+        </div>
+        <div class="col-md-4">
+
+          <h4>Redes sociales</h4>
+
+          {{ partial "social.html" . }}
+
+          <h4>Contact information</h4>
+
+          {{ if (and (.Site.Params.about.location) (.Site.Params.about.postalcode)) }}
+          <div class="row">
+            <div class="col-xs">
+            <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="col-lg">
+            {{ .Site.Params.about.location }} {{ .Site.Params.about.postalcode }}
+            </div>
+          </div>
+          {{ end }}
+
+          {{ if .Site.Params.about.metro }}
+          <div class="row">
+            <div class="col-xs">
+            <i class="fas fa-subway"></i>
+            </div>
+            <div class="col-lg">
+            {{ .Site.Params.about.metro }}
+            </div>
+          </div>
+          {{ end }}
+
+          {{ if .Site.Params.about.cvr }}
+          <div class="row">
+            <div class="col-xs">
+            <i class="fas fa-id-card"></i>
+            </div>
+            <div class="col-lg">
+              CVR number: {{ .Site.Params.about.cvr }}
+            </div>
+          </div>
+          {{ end }}
+
+          {{ if .Site.Params.about.horario }}
+          <div class="row">
+            <div class="col-xs">
+            <i class="far fa-calendar"></i>
+            </div>
+            <div class="col-lg">
+              {{ .Site.Params.about.horario }}
+            </div>
+          </div>
+          {{ end }}
+
+          {{ if .Site.Params.about.email }}
+          <div class="row">
+            <div class="col-xs">
+            <i class="fas fa-envelope"></i>
+            </div>
+            <div class="col-lg">
+              {{ .Site.Params.about.email }}
+            </div>
+          </div>
+          {{ end }}
+
+          {{ if .Site.Params.about.telefono }}
+          <div class="row">
+            <div class="col-xs">
+            <i class="fas fa-phone"></i>
+            </div>
+            <div class="col-lg">
+              {{ .Site.Params.about.telefono }}
+            </div>
+          </div>
+          {{ end }}
+
+        </div>
+      </div>
+
+    </article>
+  </div>
+{{ end }}

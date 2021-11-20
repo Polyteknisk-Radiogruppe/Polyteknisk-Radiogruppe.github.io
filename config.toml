@@ -1,0 +1,125 @@
+baseurl = "https://example.com/"
+title = "Polyteknisk Radiogruppe"
+# themesDir = "../../"
+theme = "whiteclub"
+languageCode = "en"
+# Disqus shortname
+#disqusShortname = ""
+# google analytics tracking id
+#googleAnalytics = ""
+pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsOptions = "linenos=table"
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; Copyright 2021 Polyteknisk Radiogruppe"
+
+[params]
+  # useCDN = false
+  # showShareIcons = true
+  # Date format
+  #dateFormat = "January 2, 2006"
+  dateFormat = "2 January, 2006"
+  description = "PRG - OZ7OMR"
+  avatar = "/logo.png"
+
+  # Activities info
+  [params.activities]
+
+    # Using Google calendar on "insert calendar"
+    calendarPublicURL = "https://calendar.google.com/calendar?cid=ZWE0cmN0Lm9yZ19oNjVidW1obzRydGRwNWRsYmtpajFodWxmY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+
+   # iframe from Google Calendar: Better without title, without print icon, using month, wight: 500, height: 400
+   calendarIframe = '''
+   <iframe src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showDate=0&amp;showCalendars=0&amp;height=400&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=ea4rct.org_h65bumho4rtdp5dlbkij1hulfc%40group.calendar.google.com&amp;color=%23691426&amp;ctz=Europe%2FMadrid" style="border-width:0" width="500" height="400" frameborder="0" scrolling="no"></iframe>
+   '''
+
+  # This is displayer in About page.
+  [params.about]
+    #twitter = "whiteclub"
+    github = "Polyteknisk-Radiogruppe"
+    #gitea = "http://git.radio.clubs.etsit.upm.es"
+    email = "prg@prg.dtu.dk"
+    facebook = "polytekniskRG"
+
+    location =  "DTU building 101 E, 1 floor, room 116C"
+    postalcode =  "2800, Kongens Lyngby"
+    #metro = "Metro: Ciudad Universitaria, Vicente Aleixandre"
+    cvr = "36233850"
+    telefono = "+45 77424429"
+    #horario = "De lunes a viernes de 9 a 21"
+
+  # Slideshow of pictures on homepage.
+  [params.slideshow]
+    [params.slideshow.pic1]
+      file = "/slideshow/table.jpg"
+      #title = "a great pic"
+      #desc = "This pic was on South Africa"
+    [params.slideshow.pic2]
+      file = "/slideshow/osciloscopes.jpg"
+      #title = "A second great pic"
+      #desc = "This pic was on North Africa"
+    [params.slideshow.pic3]
+      file = "/slideshow/working.jpg"
+      #title = "The third great pic"
+      #desc = "This pic was on East Africa"
+    [params.slideshow.pic4]
+      file = "/slideshow/screen.jpg"
+      #title = "Fourth great pic"
+      #desc = "This pic was on West Africa"
+    [params.slideshow.pic5]
+      file = "/slideshow/arcade.jpg"
+      #title = "Fifth great pic"
+      #desc = "This pic was on Center Africa"
+    [params.slideshow.pic6]
+      file = "/slideshow/tables.jpg"
+      #title = "Sixth pic"
+      #desc = "This pic was on South-West Africa"
+
+  [taxonomies]
+    category = "Categories"
+    tag = "Tags"
+    series = "series"
+
+  # Header Menu
+  [[menu.main]]
+    name = "Next activities"
+    identifier = "activities"
+    url = "/activities/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    url = "/blog/"
+    weight = 2
+#  [[menu.main]]
+#    name = "Categorias"
+#    identifier = "categorias"
+#    url = "/categorias/"
+#    weight = 3
+#  [[menu.main]]
+#    name = "Tags"
+#    identifier = "tags"
+#    url = "/tags/"
+#    weight = 4
+#  [[menu.main]]
+#    name = "Archivo"
+#    identifier = "archives"
+#    url = "/archives/"
+#    weight = 5
+#  [[menu.main]]
+#    name = "Quiénes somos"
+#    identifier = "team"
+#    url = "/team/"
+#    weight = 6
+  [[menu.main]]
+    name = "About"
+    identifier = "about"
+    url = "/about/"
+    weight = 7
+
+  # Footer Menu
+  [[menu.footer]]
+    name = "About"
+    weight = 1
+    identifier = "about"
+    url = "/about/"
