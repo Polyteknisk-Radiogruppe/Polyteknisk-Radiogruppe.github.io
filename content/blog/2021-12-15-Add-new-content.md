@@ -69,7 +69,7 @@ $ git push
 
 6. To send your changes to the *global* repository you have to create a **Pull Request**, this is sending a request for your changes to be added to the server, with the approval of an administrator. Go to your repository and go to Pull Request:
 
-TODO: FOTO PULL REQUEST
+![Open pull request](/blog/2021-12-15/PR.PNG)
 
 ## How to add a new activity?
 

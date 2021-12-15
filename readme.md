@@ -28,7 +28,7 @@ In order to send your work to this blog you need to copy the global repository i
 To do this you have to follow the next steps:
 1. Create a copy of the original repository (`Polyteknisk-Radiogruppe/Polyteknisk-Radiogruppe.github.io`) in your github user account, this is called **fork**. To do this go to the button called **Fork**:
 
-  ![Fork button](./static/blog/2021-12-15/fork.PNG)
+![Fork button](./static/blog/2021-12-15/fork.PNG)
 
 2. In your Github user account will have created a repository with the hugo webpage. Clone this repository **recursively** in your local machine. Open your terminal and execute the following command, changing `URL_REPO_FORK` with the URL of your forked repository.
 
@@ -55,7 +55,7 @@ $ git push
 
 6. To send your changes to the *global* repository you have to create a **Pull Request**, this is sending a request for your changes to be added to the server, with the approval of an administrator. Go to your repository and go to Pull Request:
 
-TODO: FOTO PULL REQUEST
+![Open pull request](/blog/2021-12-15/PR.PNG)
 
 ## How to add a new activity?
 
