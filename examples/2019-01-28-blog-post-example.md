@@ -7,10 +7,6 @@ tags: [
   "Tag 1",
   "Tag 2"
 ]
-categorias: [
-  "Category 1",
-  "Category 2"
-]
 image: /blog/DATA/IMAGE  # If you put a photo is better
 ---
 
