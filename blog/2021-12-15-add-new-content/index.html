@@ -1,0 +1,176 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+<title>How to add new content to PRG webpage - Polyteknisk Radiogruppe</title>
+<meta property="og:title" content="How to add new content to PRG webpage - Polyteknisk Radiogruppe">
+<meta name=twitter:title content="How to add new content to PRG webpage - Polyteknisk Radiogruppe">
+<meta name=description content="This is a copy of the content of the file readme.md from the repository of the webpage on github. It explains how to add new content to the PRG webpage.
+ PRG-web This repository is the webpage of the Polyteknisk Radiogruppe part of Technical University of Denmark placed in Copenhagen. This webpage is created with gohugo, Markdown and HTML/CSS.
+Gohugo, or Hugo, is a framework for building static websites. It makes easy to add new content to a new webpage.">
+<meta property="og:description" content="This is a copy of the content of the file readme.md from the repository of the webpage on github. It explains how to add new content to the PRG webpage.
+ PRG-web This repository is the webpage of the Polyteknisk Radiogruppe part of Technical University of Denmark placed in Copenhagen. This webpage is created with gohugo, Markdown and HTML/CSS.
+Gohugo, or Hugo, is a framework for building static websites. It makes easy to add new content to a new webpage.">
+<meta name=twitter:description content="This is a copy of the content of the file readme.md from the repository of the webpage on github. It explains how to add new content to the PRG webpage.
+ PRG-web This repository is the webpage of the …">
+<meta name=author content>
+<meta property="og:site_name" content="Polyteknisk Radiogruppe">
+<meta property="og:url" content="https://polyteknisk-radiogruppe.github.io/blog/2021-12-15-add-new-content/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://polyteknisk-radiogruppe.github.io/blog/2021-12-15/fork.PNG">
+<meta name=twitter:image content="https://polyteknisk-radiogruppe.github.io/blog/2021-12-15/fork.PNG">
+<meta name=twitter:card content="summary">
+<meta name=generator content="Hugo 0.90.1"><link rel=stylesheet type=text/css href=/css/bootstrap.min.css>
+<script src=https://code.jquery.com/jquery-3.2.1.slim.min.js integrity=sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity=sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q crossorigin=anonymous></script>
+<script src=/js/bootstrap.min.js></script>
+<link rel=stylesheet href=/css/style.css media=all>
+<link rel=stylesheet href=/css/syntax.css media=all>
+<link rel=stylesheet href=/css/custom.css media=all>
+<script src=/js/script.js></script>
+<script src=/js/custom.js></script>
+<script defer src=/js/fontawesome.js></script>
+</head>
+<body>
+<header class=site-header>
+<nav class=site-navi>
+<a href=/ class=site-avatar><img src=/logo.png></a>
+<div class=site-info>
+<h1 class=site-title><a href=/>Polyteknisk Radiogruppe</a></h1>
+<p class=site-description>PRG - OZ7OMR</p>
+</div>
+<ul class=site-navi-items>
+<li class=site-navi-item-activities><a href=/activities/ title="Next activities">Next activities</a></li>
+<li class=site-navi-item-blog><a href=/blog/ title=Blog>Blog</a></li>
+<li class=site-navi-item-about><a href=/about/ title=About>About</a></li>
+</ul>
+</nav>
+</header>
+<hr class=site-header-bottom>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<div class=main role=main>
+<article class=article>
+<img src=/blog/2021-12-15/fork.PNG class=article-image>
+<h1 class=article-title>How to add new content to PRG webpage</h1>
+<hr class=article-title-bottom>
+<ul class=article-meta>
+<li class=article-meta-date><time>15 December, 2021</time></li>
+</ul>
+<aside class=toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#how-is-it-developed>How is it developed?</a></li>
+<li><a href=#how-to-install-hugo>How to install Hugo?</a></li>
+<li><a href=#how-to-use-hugo>How to use Hugo?</a></li>
+<li><a href=#how-to-add-new-content-to-this-repository>How to add new content to this repository?</a></li>
+<li><a href=#how-to-add-a-new-activity>How to add a new activity?</a></li>
+<li><a href=#how-to-add-a-new-post-in-the-blog>How to add a new post in the blog?</a></li>
+<li><a href=#how-to-add-images>How to add images?</a></li>
+<li><a href=#add-latex-equations>Add LaTeX equations</a></li>
+</ul>
+</nav>
+</aside>
+<p>This is a copy of the content of the file <code>readme.md</code> from the <a href=https://github.com/Polyteknisk-Radiogruppe/Polyteknisk-Radiogruppe.github.io>repository of the webpage on github</a>. It explains how to add new content to the PRG webpage.</p>
+<hr>
+<h1 id=prg-web>PRG-web</h1>
+<p>This repository is the webpage of the Polyteknisk Radiogruppe part of Technical University of Denmark placed in Copenhagen. This webpage is created with <a href=https://gohugo.io/>gohugo</a>, <a href=http://es.wikipedia.org/wiki/Markdown>Markdown</a> and <code>HTML/CSS</code>.</p>
+<p><a href=https://gohugo.io/>Gohugo</a>, or Hugo, is a framework for building static websites. It makes easy to add new content to a new webpage. Basically the posts are written in <a href=http://es.wikipedia.org/wiki/Markdown>Markdown</a>, and there is a layout that builds the hole site. In order to add new content you will need to add a new text file in markdown.</p>
+<h2 id=how-is-it-developed>How is it developed?</h2>
+<p>This web is based on a theme called whiteclub, that you can dowload <a href=https://github.com/acien101/WhiteClub-Hugo-Theme>here</a>, and it is created with <code>HTML/CSS/BOOTSTRAP</code>. Although the posts are written with markdown, the layout simplify the creation of new posts witn a uniform style.</p>
+<h2 id=how-to-install-hugo>How to install Hugo?</h2>
+<p>It is easy to install hugo in a Linux machine using <code>snap install hugo</code>.</p>
+<p>There is more information of how to install hugo: <a href=https://gohugo.io/getting-started/installing/>Install Hugo</a></p>
+<h2 id=how-to-use-hugo>How to use Hugo?</h2>
+<p>Hugo is a really easy to use software. To render a web in your machine you need to execute:</p>
+<pre tabindex=0><code>$ hugo server
+</code></pre><h2 id=how-to-add-new-content-to-this-repository>How to add new content to this repository?</h2>
+<p>In order to send your work to this blog you need to copy the global repository in a personal repository (fork), make your changes, send this changes to the global repository for review by an administrator, and when is approved it is added to the web page.</p>
+<p>To do this you have to follow the next steps:</p>
+<ol>
+<li>Create a copy of the original repository (<code>Polyteknisk-Radiogruppe/Polyteknisk-Radiogruppe.github.io</code>) in your github user account, this is called <strong>fork</strong>. To do this go to the button called <strong>Fork</strong>:</li>
+</ol>
+<p><img src=/blog/2021-12-15/fork.PNG alt="Fork button"></p>
+<ol start=2>
+<li>In your Github user account will have created a repository with the hugo webpage. Clone this repository <strong>recursively</strong> in your local machine. Open your terminal and execute the following command, changing <code>URL_REPO_FORK</code> with the URL of your forked repository.</li>
+</ol>
+<pre tabindex=0><code>$ git clone --recursive URL_REPO_FORK
+</code></pre><ol start=3>
+<li>Make your changes in the webpage. In the next section it is explained how to add new content.</li>
+<li>When your changes are done, review that everything is working how you want to:</li>
+</ol>
+<pre tabindex=0><code>$ cd Polyteknisk-Radiogruppe.github.io
+$ hugo server
+</code></pre><p>The command output tells you that the web is rendered in <em>localhost</em>. Open this link and review your work.</p>
+<ol start=5>
+<li>When everything is done, upload your changes to your repository:</li>
+</ol>
+<pre tabindex=0><code>$ git add .
+$ git commit -m &quot;COMMENT EXPLAINING WHAT YOU HAVE DONE&quot;
+$ git push
+</code></pre><ol start=6>
+<li>To send your changes to the <em>global</em> repository you have to create a <strong>Pull Request</strong>, this is sending a request for your changes to be added to the server, with the approval of an administrator. Go to your repository and go to Pull Request:</li>
+</ol>
+<p><img src=/blog/2021-12-15/PR.PNG alt="Open pull request"></p>
+<h2 id=how-to-add-a-new-activity>How to add a new activity?</h2>
+<p>To add a new activity to the web page, copy the file <code>examples\2018-12-02-Example-activity.md</code> in the folder <code>content\activities</code> and rename it with the name of the activity. The name of the file should be <code>YYYY-MM-DD-Name-of-the-activity.md</code>. For example:</p>
+<pre tabindex=0><code>2021-12-15-Working-with-SDR.md
+</code></pre><p>And the folders will have the next structure:</p>
+<pre tabindex=0><code>├── content
+│   ├── activities
+│   │   ├── 2021-12-15-Working-with-SDR.md
+</code></pre><p>Update the file with the information of the activity.</p>
+<p>To watch the page execute the command <code>hugo server</code> and go to the url that is in the output of the command.</p>
+<h2 id=how-to-add-a-new-post-in-the-blog>How to add a new post in the blog?</h2>
+<p>To add a new post in the blog, copy the file <code>examples\2019-01-28-blog-post-example.md</code> in the folder <code>content\blog</code> and rename it with the title of the post. The name of the file should be <code>YYYY-MM-DD-Name-of-the-post.md</code>. For example:</p>
+<pre tabindex=0><code>2021-12-15-How-to-use-FT8.md
+</code></pre><p>And the folders will have the next structure:</p>
+<pre tabindex=0><code>├── content
+│   ├── blog
+│   │   ├── 2021-12-15-How-to-use-FT8.md
+</code></pre><p>Update the file with the information of the activity.</p>
+<p>To watch the page execute the command <code>hugo server</code> and go to the url that is in the output of the command.</p>
+<h2 id=how-to-add-images>How to add images?</h2>
+<p>If you want to add new pictures in your posts, put then in <code>static/blog/DATE</code> if it is a post in the blog, and <code>static/activities/DATE</code> if it is a activity. You can reference the image in your post like this:</p>
+<pre tabindex=0><code>![Description of the picture](/blog/DATE/picture1.png)
+</code></pre><h2 id=add-latex-equations>Add LaTeX equations</h2>
+<p>The LaTeX equations are rendered with MathJax <strong>following the LaTeX syntax</strong>.</p>
+<p>You can add equations like this:</p>
+<pre tabindex=0><code>$$
+\frac{2}{2} = 1 \\\\
+2_a = 14
+$$
+</code></pre><p>Inline equatios are like \(2 + \lambda = 4\)</p>
+</article>
+<ul class=article-share>
+<li>
+<a href=https://twitter.com/share class=twitter-share-button>Tweet</a> <script>!function(a,c,d){var b,e=a.getElementsByTagName(c)[0],f=/^http:/.test(a.location)?'http':'https';a.getElementById(d)||(b=a.createElement(c),b.id=d,b.src=f+'://platform.twitter.com/widgets.js',e.parentNode.insertBefore(b,e))}(document,'script','twitter-wjs')</script>
+</li>
+<li>
+<div class=fb-share-button data-href=https://polyteknisk-radiogruppe.github.io/blog/2021-12-15-add-new-content/ data-layout=button_count data-action=like data-size=small data-show-faces=true data-share=true></div>
+<div id=fb-root></div>
+<script>(function(b,c,d){var a,e=b.getElementsByTagName(c)[0];if(b.getElementById(d))return;a=b.createElement(c),a.id=d,a.src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0",e.parentNode.insertBefore(a,e)})(document,'script','facebook-jssdk')</script>
+</li>
+</ul>
+<ul class="pager article-pager">
+<li class="pager-newer pager-noitem">&lt; Newer</li>
+<li class=pager-older>
+<a href=/blog/2021-11-20-first-post/ data-toggle=tooltip data-placement=top title="PRG launch his new website">Older ></a>
+</li>
+</ul>
+</div>
+<div class=site-footer>
+<div class=copyright>&copy; Copyright 2021 Polyteknisk Radiogruppe</div>
+<ul class=site-footer-items>
+<li class=site-footer-item-rsslink>
+<a href=/index.xml type=application/rss+xml target=_blank title=RSS>
+<i class="fas fa-rss"></i>
+</a>
+</li>
+<li class=site-footer-item-about><a href=/about/ title=About>About</a></li>
+</ul>
+<div class=powerdby>
+Powered by <a href=https://gohugo.io/>Hugo</a> based on <a href=https://git.radio.clubs.etsit.upm.es/Whiteclub/Whiteclub-Hugo-Theme>Whiteclub</a>
+</div>
+</div>
+</body>
+</html>
