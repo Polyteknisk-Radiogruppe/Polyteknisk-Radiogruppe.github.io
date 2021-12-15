@@ -1,3 +1,17 @@
+---
+layout: post
+published: true
+title: How to add new content to PRG webpage
+date: 2021-12-15  # DATE IN FORMAT YYYY-MM-DD
+tags: [
+]
+image: /blog/2021-12-15/fork.PNG  # If you put a photo is better
+---
+
+This is a copy of the content of the file `readme.md` from the [repository of the webpage on github](https://github.com/Polyteknisk-Radiogruppe/Polyteknisk-Radiogruppe.github.io). It explains how to add new content to the PRG webpage.
+
+---
+
 # PRG-web
 
 This repository is the webpage of the Polyteknisk Radiogruppe part of Technical University of Denmark placed in Copenhagen. This webpage is created with [gohugo](https://gohugo.io/), [Markdown](http://es.wikipedia.org/wiki/Markdown) and `HTML/CSS`.
@@ -21,14 +35,14 @@ Hugo is a really easy to use software. To render a web in your machine you need 
 $ hugo server
 ```
 
-## ¿How to add new content to this repository?
+## How to add new content to this repository?
 
 In order to send your work to this blog you need to copy the global repository in a personal repository (fork), make your changes, send this changes to the global repository for review by an administrator, and when is approved it is added to the web page.
 
 To do this you have to follow the next steps:
 1. Create a copy of the original repository (`Polyteknisk-Radiogruppe/Polyteknisk-Radiogruppe.github.io`) in your github user account, this is called **fork**. To do this go to the button called **Fork**:
 
-  ![Fork button](./static/blog/2021-12-15/fork.PNG)
+  ![Fork button](/blog/2021-12-15/fork.PNG)
 
 2. In your Github user account will have created a repository with the hugo webpage. Clone this repository **recursively** in your local machine. Open your terminal and execute the following command, changing `URL_REPO_FORK` with the URL of your forked repository.
 
@@ -102,5 +116,20 @@ To watch the page execute the command `hugo server` and go to the url that is in
 If you want to add new pictures in your posts, put then in `static/blog/DATE` if it is a post in the blog, and `static/activities/DATE` if it is a activity. You can reference the image in your post like this:
 
 ```
-![Descriptiopn of the picture](/blog/DATE/picture1.png)
+![Description of the picture](/blog/DATE/picture1.png)
 ```
+
+## Add LaTeX equations
+
+The LaTeX equations are rendered with MathJax **following the LaTeX syntax**.
+
+You can add equations like this:
+
+```
+$$
+\frac{2}{2} = 1 \\\\
+2_a = 14
+$$
+```
+
+Inline equatios are like \\(2 + \lambda = 4\\)

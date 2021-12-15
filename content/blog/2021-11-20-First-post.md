@@ -5,8 +5,6 @@ title: PRG launch his new website
 date: 2021-11-20  # La fecha va con la forma YYYY-MM-DD
 tags: [
 ]
-categorias: [
-]
 image: "/blog/2021-11-20/1.jpg"
 ---
 
