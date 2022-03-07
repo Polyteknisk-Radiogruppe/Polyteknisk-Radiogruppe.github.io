@@ -15,12 +15,12 @@ Gohugo, or Hugo, is a framework for building static websites. It makes easy to a
  PRG-web This repository is the webpage of the …">
 <meta name=author content>
 <meta property="og:site_name" content="Polyteknisk Radiogruppe">
-<meta property="og:url" content="https://polyteknisk-radiogruppe.github.io/blog/2021-12-15-add-new-content/">
+<meta property="og:url" content="https://polyteknisk-radiogruppe.github.io/Page%28/blog/2021-12-15-Add-new-content.md%29">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://polyteknisk-radiogruppe.github.io/blog/2021-12-15/fork.PNG">
 <meta name=twitter:image content="https://polyteknisk-radiogruppe.github.io/blog/2021-12-15/fork.PNG">
 <meta name=twitter:card content="summary">
-<meta name=generator content="Hugo 0.92.1"><link rel=stylesheet type=text/css href=/css/bootstrap.min.css>
+<meta name=generator content="Hugo 0.87.0"><link rel=stylesheet type=text/css href=/css/bootstrap.min.css>
 <script src=https://code.jquery.com/jquery-3.2.1.slim.min.js integrity=sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN crossorigin=anonymous></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity=sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q crossorigin=anonymous></script>
 <script src=/js/bootstrap.min.js></script>
@@ -82,7 +82,7 @@ Gohugo, or Hugo, is a framework for building static websites. It makes easy to a
 <p>There is more information of how to install hugo: <a href=https://gohugo.io/getting-started/installing/>Install Hugo</a></p>
 <h2 id=how-to-use-hugo>How to use Hugo?</h2>
 <p>Hugo is a really easy to use software. To render a web in your machine you need to execute:</p>
-<pre tabindex=0><code>$ hugo server
+<pre><code>$ hugo server
 </code></pre><h2 id=how-to-add-new-content-to-this-repository>How to add new content to this repository?</h2>
 <p>In order to send your work to this blog you need to copy the global repository in a personal repository (fork), make your changes, send this changes to the global repository for review by an administrator, and when is approved it is added to the web page.</p>
 <p>To do this you have to follow the next steps:</p>
@@ -93,18 +93,18 @@ Gohugo, or Hugo, is a framework for building static websites. It makes easy to a
 <ol start=2>
 <li>In your Github user account will have created a repository with the hugo webpage. Clone this repository <strong>recursively</strong> in your local machine. Open your terminal and execute the following command, changing <code>URL_REPO_FORK</code> with the URL of your forked repository.</li>
 </ol>
-<pre tabindex=0><code>$ git clone --recursive URL_REPO_FORK
+<pre><code>$ git clone --recursive URL_REPO_FORK
 </code></pre><ol start=3>
 <li>Make your changes in the webpage. In the next section it is explained how to add new content.</li>
 <li>When your changes are done, review that everything is working how you want to:</li>
 </ol>
-<pre tabindex=0><code>$ cd Polyteknisk-Radiogruppe.github.io
+<pre><code>$ cd Polyteknisk-Radiogruppe.github.io
 $ hugo server
 </code></pre><p>The command output tells you that the web is rendered in <em>localhost</em>. Open this link and review your work.</p>
 <ol start=5>
 <li>When everything is done, upload your changes to your repository:</li>
 </ol>
-<pre tabindex=0><code>$ git add .
+<pre><code>$ git add .
 $ git commit -m &quot;COMMENT EXPLAINING WHAT YOU HAVE DONE&quot;
 $ git push
 </code></pre><ol start=6>
@@ -113,29 +113,29 @@ $ git push
 <p><img src=/blog/2021-12-15/PR.PNG alt="Open pull request"></p>
 <h2 id=how-to-add-a-new-activity>How to add a new activity?</h2>
 <p>To add a new activity to the web page, copy the file <code>examples\2018-12-02-Example-activity.md</code> in the folder <code>content\activities</code> and rename it with the name of the activity. The name of the file should be <code>YYYY-MM-DD-Name-of-the-activity.md</code>. For example:</p>
-<pre tabindex=0><code>2021-12-15-Working-with-SDR.md
+<pre><code>2021-12-15-Working-with-SDR.md
 </code></pre><p>And the folders will have the next structure:</p>
-<pre tabindex=0><code>├── content
+<pre><code>├── content
 │   ├── activities
 │   │   ├── 2021-12-15-Working-with-SDR.md
 </code></pre><p>Update the file with the information of the activity.</p>
 <p>To watch the page execute the command <code>hugo server</code> and go to the url that is in the output of the command.</p>
 <h2 id=how-to-add-a-new-post-in-the-blog>How to add a new post in the blog?</h2>
 <p>To add a new post in the blog, copy the file <code>examples\2019-01-28-blog-post-example.md</code> in the folder <code>content\blog</code> and rename it with the title of the post. The name of the file should be <code>YYYY-MM-DD-Name-of-the-post.md</code>. For example:</p>
-<pre tabindex=0><code>2021-12-15-How-to-use-FT8.md
+<pre><code>2021-12-15-How-to-use-FT8.md
 </code></pre><p>And the folders will have the next structure:</p>
-<pre tabindex=0><code>├── content
+<pre><code>├── content
 │   ├── blog
 │   │   ├── 2021-12-15-How-to-use-FT8.md
 </code></pre><p>Update the file with the information of the activity.</p>
 <p>To watch the page execute the command <code>hugo server</code> and go to the url that is in the output of the command.</p>
 <h2 id=how-to-add-images>How to add images?</h2>
 <p>If you want to add new pictures in your posts, put then in <code>static/blog/DATE</code> if it is a post in the blog, and <code>static/activities/DATE</code> if it is a activity. You can reference the image in your post like this:</p>
-<pre tabindex=0><code>![Description of the picture](/blog/DATE/picture1.png)
+<pre><code>![Description of the picture](/blog/DATE/picture1.png)
 </code></pre><h2 id=add-latex-equations>Add LaTeX equations</h2>
 <p>The LaTeX equations are rendered with MathJax <strong>following the LaTeX syntax</strong>.</p>
 <p>You can add equations like this:</p>
-<pre tabindex=0><code>$$
+<pre><code>$$
 \frac{2}{2} = 1 \\\\
 2_a = 14
 $$
